@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-import { Container } from '../components/Container';
-import { Form } from '../components/Form';
+import { Container } from '@/components/Container';
+import { Form } from '@/components/Form';
 
 export const Home = () => {
   const [length, setLength] = useState(8);

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { Passwords } from "./pages/Passwords/index.jsx";
+import { Home } from "@/pages/Home";
+import { Passwords } from "@/pages/Passwords/index.jsx";
 
 function App() {
   return (

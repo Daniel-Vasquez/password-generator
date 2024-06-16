@@ -1,5 +1,5 @@
-import { CopyIcon } from "./icons/CopyIcon"
-import { TrashIcon } from "./icons/TrashIcon"
+import { CopyIcon } from "@/components/icons/CopyIcon"
+import { TrashIcon } from "@/components/icons/TrashIcon"
 
 const ListPasswords = ({ passwords, deletedPassword, handleCopy, textRef }) => {
   if (passwords.length === 0) {

@@ -16,6 +16,7 @@ export const Home = () => {
     if (savedPasswords) {
       setPasswords(savedPasswords);
     }
+    document.title = 'Genera tu contraseña';
   }, []);
 
   const generatePassword = () => {
@@ -64,7 +65,7 @@ export const Home = () => {
       />
 
       <div className="flex justify-center">
-        <Link to="/passwords" className="block-inline bg-white font-semibold text-center mt-4 p-3 rounded-lg text-black hover:text-blue-600 hover:bg-gray-800">
+        <Link to="/contrasenas-guardadas" className="block-inline bg-white font-semibold text-center mt-4 p-3 rounded-lg text-black hover:text-blue-600 hover:bg-gray-800">
           Ver todas las contraseñas
         </Link>
       </div>

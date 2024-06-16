@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { TrashIcon } from "@/components/icons/TrashIcon"
 import { Container } from '@/components/Container.jsx';
@@ -30,6 +30,10 @@ export const Passwords = () => {
     navigator.clipboard.writeText(textToCopy)
   };
 
+  useEffect(() => {
+    document.title = 'Contraseñas guardadas';
+  }, []);
+
   return (
     <Container>
       <div className="bg-white rounded-lg px-11 py-7">
@@ -37,7 +41,7 @@ export const Passwords = () => {
           Contraseñas guardadas.
         </h1>
 
-        {text && <p className="absolute bottom-11 right-4 text-yellow-500 font-bold  sm:right-28">Copiado</p>}
+        {text && <p className="absolute bottom-11 right-4 text-yellow-500 font-bold sm:right-32">Copiado</p>}
 
         <PasswordsContainer
           textRef={textRef}
@@ -53,7 +57,7 @@ export const Passwords = () => {
               onClick={deletedPasswords}
               title="Eliminar todas las contraseñas"
             >
-              <TrashIcon className="w-11 h-11 text-transparent" color="red" />
+              <TrashIcon className="w-10 h-10 text-transparent" color="red" />
             </button>
           </div>
         )}

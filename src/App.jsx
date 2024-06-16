@@ -8,7 +8,7 @@ function App() {
       <Routes>
         <Route>
           <Route path="/" element={<Home />} />
-          <Route path="/passwords" element={<Passwords />} />
+          <Route path="/contrasenas-guardadas" element={<Passwords />} />
         </Route>
       </Routes>
     </BrowserRouter>

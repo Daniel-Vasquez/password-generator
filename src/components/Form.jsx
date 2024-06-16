@@ -10,8 +10,10 @@ export const Form = ({
   savePassword
 }) => {
   return (
-    <div className="bg-white rounded-lg px-11 py-7 flex flex-col items-center gap-2">
-      <h1 className="text-yellow-500 text-3xl font-bold text-center mb-7">Generador de Contraseñas</h1>
+    <div className="bg-white rounded-lg px-20 py-7 flex flex-col items-center gap-2">
+      <h1 className="text-yellow-500 text-3xl font-bold text-center mb-7">
+        Genera tu Contraseña
+      </h1>
       <div className="text-center">
         <p className="font-semibold text-xl text-black mb-3">Longitud de la Contraseña:</p>
         <div className="w-32 m-auto py-2 px-3 border border-gray-200 rounded-lg" data-hs-input-number="">

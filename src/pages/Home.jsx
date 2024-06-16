@@ -44,12 +44,13 @@ export const Home = () => {
     setPasswords(updatedPasswords);
     localStorage.setItem('passwords', JSON.stringify(updatedPasswords));
     setNewPasswordName('');
+    setIncludeNumbers(false);
+    setIncludeSpecial(false);
+    setLength(8);
   };
 
   return (
-    <Container>
-      <h1 className="text-yellow-500 text-3xl font-bold text-center mb-7">Generador de Contraseñas</h1>
-      
+    <Container>      
       <Form
         length={length}
         setLength={setLength}
